@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: hsl(233, 47%, 7%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 15px 10px;
+}
+
+.textContainer {
+  padding: 40px 20px;
+}
+.card {
+  width: 100%;
+  /* max-width: 375px; */
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.title h1 {
+  /* padding-top: 30px; */
+  font-family: Lexend Deca;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+.green {
+  color: hsl(277, 64%, 61%);
+}
+.parag {
+  padding-top: 20px;
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: lexend deca;
+  text-align: center;
+  line-height: 2;
+}
+.small {
+  text-transform: lowercase;
+}
+
+.template {
+  padding-top: 30px;
+  font-family: lexend deca;
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 2;
+}
+
+.template {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0;
+}
+
+.bold {
+  font-weight: 200px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.picture {
+  position: relative;
+  overflow: hidden;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(170, 92, 219, 0.4);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media all and (min-width: 768px) {
+  body {
+    padding: 0;
+  }
+  .card {
+    display: flex;
+    /* height: 400px; */
+    width: 80%;
+    /* flex-grow: 1; */
+    /* max-width: auto; */
+  }
+  .imgContainer {
+    order: 2;
+  }
+  .imgContainer,
+  .textContainer {
+    width: 40%;
+    flex-grow: 1;
+  }
+  .textContainer {
+    padding: 60px;
+  }
+  .title h1 {
+    text-align: left;
+  }
+
+  .parag {
+    text-align: left;
+  }
+
+  .templateCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
